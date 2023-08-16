@@ -4,15 +4,14 @@ This project is implemented within the framework of learning on the MateAcademy 
 
 # Project Description 🚀 ✈️
 
-1. Spring Security Configuration with In-Memory Authentication: All user authentication settings are stored in the program's memory. Authorization is required to access protected resources.
-2. Usage of Annotations such as @NonNull, @Min, etc.: Annotations are added to the code for more accurate data validation. Depending on the context, annotations like @NonNull, @Min, and others are used.
-3. Custom Email Validation Implementation: Custom logic is added for validating email addresses. It checks the correct email format according to established rules.
-4. CustomGlobalExceptionHandler Implementation: A global handler is introduced to handle exceptional situations, ensuring proper JSON error responses with established error status.
-5. Usage of passwordEncoder for Password Hashing: The login() method in AuthenticationService and salt usage in the User entity have been removed. Instead, password hashing is done using the passwordEncoder in UserService when adding a user.
-6. Addition of repeatPassword Field in UserRequestDto: The UserRequestDto now includes a repeatPassword field, used to ensure password and repeat password match.
-7. Validation of Password Match: Validation is added to ensure that the password and repeat password match.
-8. Handling DataProcessingException in CustomGlobalExceptionHandler: In case of a DataProcessingException, the global handler sets the response status to 500 and returns a JSON response.
-9. 
+* Spring Security Configuration with In-Memory Authentication: All user authentication settings are stored in the program's memory. Authorization is required to access protected resources.
+* Usage of Annotations such as @NonNull, @Min, etc.: Annotations are added to the code for more accurate data validation. Depending on the context, annotations like @NonNull, @Min, and others are used.
+* Custom Email Validation Implementation: Custom logic is added for validating email addresses. It checks the correct email format according to established rules.
+* CustomGlobalExceptionHandler Implementation: A global handler is introduced to handle exceptional situations, ensuring proper JSON error responses with established error status.
+* Usage of passwordEncoder for Password Hashing: The login() method in AuthenticationService and salt usage in the User entity have been removed. Instead, password hashing is done using the passwordEncoder in UserService when adding a user.
+* Addition of repeatPassword Field in UserRequestDto: The UserRequestDto now includes a repeatPassword field, used to ensure password and repeat password match.
+* Validation of Password Match: Validation is added to ensure that the password and repeat password match.
+* Handling DataProcessingException in CustomGlobalExceptionHandler: In case of a DataProcessingException, the global handler sets the response status to 500 and returns a JSON response. 
 # Requirements ‼️
 Before starting work on the project, make sure you have the following components installed:
 
