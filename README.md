@@ -4,23 +4,121 @@ This project is implemented within the framework of learning on the MateAcademy 
 
 # Project Description 🚀 ✈️
 
-Spring Security Configuration with In-Memory Authentication: All user authentication settings are stored in the program's memory. Authorization is required to access protected resources.
-Usage of Annotations such as @NonNull, @Min, etc.: Annotations are added to the code for more accurate data validation. Depending on the context, annotations like @NonNull, @Min, and others are used.
-Custom Email Validation Implementation: Custom logic is added for validating email addresses. It checks the correct email format according to established rules.
-CustomGlobalExceptionHandler Implementation: A global handler is introduced to handle exceptional situations, ensuring proper JSON error responses with established error status.
-Usage of passwordEncoder for Password Hashing: The login() method in AuthenticationService and salt usage in the User entity have been removed. Instead, password hashing is done using the passwordEncoder in UserService when adding a user.
-Addition of repeatPassword Field in UserRequestDto: The UserRequestDto now includes a repeatPassword field, used to ensure password and repeat password match.
-Validation of Password Match: Validation is added to ensure that the password and repeat password match.
-Handling DataProcessingException in CustomGlobalExceptionHandler: In case of a DataProcessingException, the global handler sets the response status to 500 and returns a JSON response.
-Requirements ‼️
-
-# Before starting work on the project, make sure you have the following components installed:
+1. Spring Security Configuration with In-Memory Authentication: All user authentication settings are stored in the program's memory. Authorization is required to access protected resources.
+2. Usage of Annotations such as @NonNull, @Min, etc.: Annotations are added to the code for more accurate data validation. Depending on the context, annotations like @NonNull, @Min, and others are used.
+3. Custom Email Validation Implementation: Custom logic is added for validating email addresses. It checks the correct email format according to established rules.
+4. CustomGlobalExceptionHandler Implementation: A global handler is introduced to handle exceptional situations, ensuring proper JSON error responses with established error status.
+5. Usage of passwordEncoder for Password Hashing: The login() method in AuthenticationService and salt usage in the User entity have been removed. Instead, password hashing is done using the passwordEncoder in UserService when adding a user.
+6. Addition of repeatPassword Field in UserRequestDto: The UserRequestDto now includes a repeatPassword field, used to ensure password and repeat password match.
+7. Validation of Password Match: Validation is added to ensure that the password and repeat password match.
+8. Handling DataProcessingException in CustomGlobalExceptionHandler: In case of a DataProcessingException, the global handler sets the response status to 500 and returns a JSON response.
+9. 
+# Requirements ‼️
+Before starting work on the project, make sure you have the following components installed:
 
 🔺 Java Development Kit (JDK) version 11 or higher.
 🔺 Maven (4.0.0): Tool for project building and dependency management.
 🔺 Git
 🔺 MySQL: Database used for data storage.
-🔺 Properly configured pom.xml file containing the following dependencies
+🔺 Properly configured pom.xml file containing the following dependencies :
+  1. spring-context
+  2. spring-orm
+  3.spring-webmvc
+  4.commons-dbcp2
+  5.hibernate-core
+  6.hibernate-java8
+  7.mysql-connector-java
+  8. javax.servlet-api
+  9. jackson-databind
+  10. jackson-datatype-jsr310
+  11. hibernate-validator
+  12. spring-security-core
+  13. spring-security-config
+  14. spring-security-web
+  ```xml
+   <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-dbcp2</artifactId>
+            <version>2.8.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-java8</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.22</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.14.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
+            <version>2.13.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>6.1.6.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>5.5.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>5.5.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>5.5.0</version>
+        </dependency>
+
+    </dependencies>
+  ```
 ### For the detailed pom.xml file, you can find it in the project folder 📕.
 
 # How to Install the Project 🔺
