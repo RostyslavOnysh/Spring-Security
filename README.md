@@ -22,11 +22,11 @@ Before starting work on the project, make sure you have the following components
 🔺 Properly configured pom.xml file containing the following dependencies :
   1. spring-context
   2. spring-orm
-  3.spring-webmvc
-  4.commons-dbcp2
-  5.hibernate-core
-  6.hibernate-java8
-  7.mysql-connector-java
+  3. spring-webmvc
+  4. commons-dbcp2
+  5. hibernate-core
+  6. hibernate-java8
+  7. mysql-connector-java
   8. javax.servlet-api
   9. jackson-databind
   10. jackson-datatype-jsr310
