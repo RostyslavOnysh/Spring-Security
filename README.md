@@ -1,4 +1,93 @@
-# Проект "Spring-Security Part 1" 📝📖
+# Project "Spring-Security Part 1" 📝📖 (ENG)
+
+This project is implemented within the framework of learning on the MateAcademy course. It involves the use of various technologies and programming principles to create a functional application.
+
+# Project Description 🚀 ✈️
+
+Spring Security Configuration with In-Memory Authentication: All user authentication settings are stored in the program's memory. Authorization is required to access protected resources.
+Usage of Annotations such as @NonNull, @Min, etc.: Annotations are added to the code for more accurate data validation. Depending on the context, annotations like @NonNull, @Min, and others are used.
+Custom Email Validation Implementation: Custom logic is added for validating email addresses. It checks the correct email format according to established rules.
+CustomGlobalExceptionHandler Implementation: A global handler is introduced to handle exceptional situations, ensuring proper JSON error responses with established error status.
+Usage of passwordEncoder for Password Hashing: The login() method in AuthenticationService and salt usage in the User entity have been removed. Instead, password hashing is done using the passwordEncoder in UserService when adding a user.
+Addition of repeatPassword Field in UserRequestDto: The UserRequestDto now includes a repeatPassword field, used to ensure password and repeat password match.
+Validation of Password Match: Validation is added to ensure that the password and repeat password match.
+Handling DataProcessingException in CustomGlobalExceptionHandler: In case of a DataProcessingException, the global handler sets the response status to 500 and returns a JSON response.
+Requirements ‼️
+
+# Before starting work on the project, make sure you have the following components installed:
+
+🔺 Java Development Kit (JDK) version 11 or higher.
+🔺 Maven (4.0.0): Tool for project building and dependency management.
+🔺 Git
+🔺 MySQL: Database used for data storage.
+🔺 Properly configured pom.xml file containing the following dependencies
+### For the detailed pom.xml file, you can find it in the project folder 📕.
+
+# How to Install the Project 🔺
+
+Clone the repository:
+```bash
+git@github.com:RostyslavOnysh/Spring-Security.git
+```
+The project will be available at http://localhost:8080
+
+# SOLID Principles ℹ️
+
+* All SOLID principles are followed in this project:
+
+1. Single Responsibility Principle
+2. Open/Closed Principle
+3. Liskov Substitution Principle
+4. Interface Segregation Principle
+5. Dependency Inversion Principle
+# Email and Password Validation 🔧
+
+The project includes email validation and password matching. For email validation, a custom annotation @Email is used, and for password matching, @MatchPassword annotation is used. Details can be found in respective classes.
+
+# EmailValidator 🔨
+
+The EmailValidator class is used for email validation. The @Email annotation is used to mark methods that accept email addresses. The validate() method is used for email address validation.
+
+# PasswordMatcher ✒️
+
+The PasswordMatcher class is used for password matching. The @MatchPassword annotation is used to mark methods that accept passwords. The matches() method is used for comparing two passwords.
+
+# Connection class 📡
+
+db.properties
+To use the program correctly, you must replace the fields in the db.properties file:
+```xml
+ 
+db.driver=com.mysql.cj.jdbc.Driver
+db.url=jdbc:mysql:YOUR_DB_ADDRESS
+db.user=USERNAME
+db.password=PASSWORD
+
+#Hibernate properties
+hibernate.show_sql=true
+hibernate.hbm2ddl.auto=create
+hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+```
+# Author ♨️
+
+[Ros]
+Email: [rostyslavonyshchenko@gmail.com]
+
+# License ☑️
+
+This project is distributed under the MIT License.
+
+You can modify this README.md file according to your project's specifications, including relevant details, functionality descriptions, documentation links, and more.
+
+*Don't forget to replace [Your Project Name], [your-username], [repository-name], [Your Name], and [Your Email] with your actual information.*
+
+
+
+
+
+
+
+# Проект "Spring-Security Part 1" 📝📖 (UA)
 
 Цей проект реалізований в рамках навчання на курсі [MateAcademy](https://mate.academy/learn?course=all_courses).У ньому я використовував різні технології та принципи програмування для створення функціональної аплікації.
 
