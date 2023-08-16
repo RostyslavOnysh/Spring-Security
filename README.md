@@ -15,11 +15,11 @@ This project is implemented within the framework of learning on the MateAcademy 
 # Requirements ‼️
 Before starting work on the project, make sure you have the following components installed:
 
-🔺 Java Development Kit (JDK) version 11 or higher.
-🔺 Maven (4.0.0): Tool for project building and dependency management.
-🔺 Git
-🔺 MySQL: Database used for data storage.
-🔺 Properly configured pom.xml file containing the following dependencies :
+* 🔺 Java Development Kit (JDK) version 11 or higher.
+* 🔺 Maven (4.0.0): Tool for project building and dependency management.
+* 🔺 Git
+* 🔺 MySQL: Database used for data storage.
+* 🔺 Properly configured pom.xml file containing the following dependencies :
   1. spring-context
   2. spring-orm
   3. spring-webmvc
